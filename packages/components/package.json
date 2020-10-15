@@ -1,0 +1,28 @@
+{
+  "name": "@app/components",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn run build",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": "~16.13.1"
+  },
+  "dependencies": {
+    "@app/shared": "*"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@types/react": "~16.9.43",
+    "babel-plugin-module-resolver": "~4.0.0",
+    "jest": "*",
+    "react": "^16.14.0",
+    "react-test-renderer": "^16.14.0"
+  }
+}

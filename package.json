@@ -1,0 +1,29 @@
+{
+  "name": "ts-monorepo",
+  "description": "Template for setting up a TypeScript monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "lerna run clean && rimraf -rf packages/*/node_modules",
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "test": "lerna run test",
+    "start": "yarn workspace @app/react-app start"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "globby": "^11.0.1",
+    "jest": "^26.5.3",
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3"
+  }
+}
