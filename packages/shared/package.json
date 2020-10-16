@@ -19,8 +19,7 @@
     "jest": "*",
     "rimraf": "*",
     "typescript": "*",
-    "eslint": "*",
-
+    "eslint": "^7.11.0",
     "@babel/preset-typescript": "~7.10.4"
   }
 }

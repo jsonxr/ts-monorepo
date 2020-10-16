@@ -12,17 +12,21 @@
     "test": "jest"
   },
   "peerDependencies": {
-    "react": "~16.13.1"
+    "react": "^16.14.0"
   },
   "dependencies": {
     "@app/shared": "*"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.4",
-    "@types/react": "~16.9.43",
+    "@types/jest": "^26.0.14",
+    "@types/node": "~14.11.8",
+    "@types/react": "~16.9.52",
+    "@types/react-dom": "~16.9.8",
     "babel-plugin-module-resolver": "~4.0.0",
-    "jest": "*",
-    "react": "^16.14.0",
+    "eslint": "^7.11.0",
+    "jest": "^26.5.3",
+    "react": "16.14.0",
     "react-test-renderer": "^16.14.0"
   }
 }
